@@ -1,4 +1,4 @@
-const API = "https://task-manager-backend-z7l5.onrender.com";
+const API = "https://task-manager-backend-z7l5.onrender.com/api/tasks";
 const token = localStorage.getItem("token");
 
 let currentEditId = null;
