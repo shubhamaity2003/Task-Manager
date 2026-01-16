@@ -1,4 +1,4 @@
-const API = "http://localhost:5000/api/auth";
+const API = "https://task-manager-backend-z7l5.onrender.com";
 
 async function register() {
   const name = document.getElementById("name").value;
