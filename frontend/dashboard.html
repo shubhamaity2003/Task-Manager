@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Task Manager</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+  <h2>Task Manager</h2>
+  <div class="user-area">
+    <span id="username"></span>
+    <button class="logout" onclick="logout()">Logout</button>
+  </div>
+</header>
+
+
+    <div class="card">
+      <h3>Add New Task</h3>
+      <input type="text" id="title" placeholder="Task title">
+      <input type="text" id="description" placeholder="Task description">
+      <button onclick="addTask()"><i class="fa-solid fa-plus"></i> Add Task</button>
+    </div>
+
+    <div class="tasks" id="taskList"></div>
+  </div>
+
+ <!-- Edit Modal -->
+<div class="modal" id="editModal">
+  <div class="modal-content">
+    <h3>Edit Task</h3>
+
+    <input type="text" id="editTitle" placeholder="Task title">
+    <input type="text" id="editDescription" placeholder="Task description">
+
+    <div class="modal-actions">
+      <button class="update-btn" onclick="updateTask()">Update</button>
+      <button class="cancel-btn" onclick="closeModal()">Cancel</button>
+    </div>
+  </div>
+</div>
+  <script src="js/tasks.js"></script>
+</body>
+</html>
